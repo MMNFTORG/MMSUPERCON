@@ -1,0 +1,12 @@
+.timer-wrap {
+    position: relative;
+}
+
+.timer-blur {
+    left: 0;
+    top: 0;
+    z-index: 80;
+    background-size: 100%;
+    background-position: center;
+    background-image: linear-gradient(178.08deg, rgba(196, 196, 196, 0) 1.57%, rgba(196, 196, 196, 0.0067) 13.92%, rgba(196, 196, 196, 0.01) 47.92%, rgba(196, 196, 196, 0.01) 81.29%, rgba(196, 196, 196, 0) 98.38%);
+}

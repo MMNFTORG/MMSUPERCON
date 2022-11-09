@@ -1,0 +1,44 @@
+.partners-block-small {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0 40px;
+  gap: 80px;
+
+  @media (max-width: 767px) {
+    justify-content: flex-start;
+    overflow-y: scroll;
+    padding: 15px 0;
+    gap: 50px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    min-height: 141px;
+
+    @media (max-width: 767px) {
+      gap: 8px;
+    }
+
+    img {
+      margin: 0 auto;
+      max-width: 256px;
+    }
+
+    span {
+      font-family: 'Oswald';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      text-align: center;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+  }
+}

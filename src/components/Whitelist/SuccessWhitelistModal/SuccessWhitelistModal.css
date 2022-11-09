@@ -1,0 +1,26 @@
+.success-modal .modal-dialog {
+    max-width: 610px;
+}
+
+.success-modal .modal-content {
+    padding: 40px 54px;
+}
+
+.success-modal .modal-title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.26;
+    margin-bottom: 24px;
+}
+
+.success-modal p {
+    line-height: 1.5;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.success-modal__buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}

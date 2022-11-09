@@ -1,0 +1,69 @@
+.explore-education-section {
+  padding: 80px 0;
+  background-image: url('../../../assets/Landing/education/bg-image.jpg');
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+
+  &:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-background-black);
+    opacity: 0.6;
+    content: '';
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+
+
+  .container>.row {
+
+    overflow: auto;
+  }
+
+  .sticky-block {
+    position: relative;
+
+    &.fixed {
+      .explore-education-section__title {
+        position: fixed;
+        top: 110px;
+        width: 306px;
+        left: var(--bs);
+      }
+    }
+
+    &.fixed.fixed-bot {
+      .explore-education-section__title {
+        top: auto;
+        position: absolute;
+        bottom: 10px;
+      }
+    }
+  }
+
+  &__title {
+  }
+
+  .education-item-wrapper:nth-child(3n) .education-item {
+    border-right: none;
+  }
+
+  .education-item-wrapper:nth-child(n+7) .education-item {
+    border-bottom: none;
+  }
+
+  @media (max-width: 767px) {
+    .education-item-wrapper:last-child .education-item {
+      border-bottom: none !important;
+    }
+  }
+}

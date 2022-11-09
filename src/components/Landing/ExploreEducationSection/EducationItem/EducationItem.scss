@@ -1,0 +1,32 @@
+.education-item {
+  padding: 32px;
+  border-right: 1px solid #545454;
+  border-bottom: 1px solid #545454;
+  min-height: 338px;
+  height: 100%;
+
+  @media (max-width: 767px) {
+    border: none;
+    border-bottom: 1px solid #545454 !important;
+  }
+
+  &__title {
+    font-family: var(--font-eurostile);
+    font-style: normal;
+    margin: 40px 0 10px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #FFF5F5;
+  }
+
+  &__description {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFF5F5;
+  }
+}

@@ -1,0 +1,31 @@
+.connect-row {
+  position: relative;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+.connect-row .column {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 630px;
+}
+
+.connect-row .round-button {
+  margin-top: 32px;
+}
+
+.connect-row .tile__main {
+  margin-top: 60px;
+}
+
+.connect-row .icon {
+  position: absolute;
+  top: -75px;
+}
+
+.tile {
+  position: relative;
+}

@@ -1,0 +1,50 @@
+.social-links {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 575px) {
+    .social-links {
+        justify-content: center;
+    }
+}
+
+@supports (gap: 12px) {
+    .social-links {
+        gap: 12px;
+    }
+}
+
+@supports not (gap: 12px) {
+    .social-links > * + * {
+        margin-left: 12px;
+    }
+}
+
+.social-links__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 54px;
+    height: 54px;
+    border: 1px solid #545454;
+    backdrop-filter: blur(40px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 50%;
+    transition: .2s linear;
+}
+
+.social-links__link svg {
+    width: 32px;
+    height: 32px;
+}
+
+.social-links__link svg path {
+    fill: var(--color-text-white)
+}
+
+.social-links__link:hover {
+    background: var(--color-text-red);
+}

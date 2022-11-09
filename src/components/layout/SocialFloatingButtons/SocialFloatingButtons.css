@@ -1,0 +1,47 @@
+.social-floating-buttons {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    z-index: 10;
+    transform: translateY(-50%);
+}
+
+.social-floating-buttons--left {
+    right: auto;
+    left: 30px;
+}
+
+.social-floating-buttons__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+}
+
+.social-rounded-button {
+    width: 54px;
+    height: 54px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(40px);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 767px) {
+    .social-rounded-button {
+        width: 48px;
+        height: 48px;
+    }
+
+    .social-floating-buttons {
+        right: 15px;
+    }
+
+    .social-floating-buttons--left {
+        left: 15px;
+    }
+}

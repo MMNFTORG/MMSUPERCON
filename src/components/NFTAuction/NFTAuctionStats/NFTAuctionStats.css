@@ -1,0 +1,41 @@
+.ntf-auction-stats__progress {
+    margin-bottom: 20px;
+}
+
+.ntf-auction-stats__progress .progress {
+    background: rgba(255, 21, 15, 0.1);
+    overflow: unset;
+    height: 8px;
+    border-radius: 0;
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+}
+
+.ntf-auction-stats__progress .progress-bar {
+    background: var(--color-background-red);
+}
+
+.ntf-auction-stats__status {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 126%;
+    color: var(--color-text-black);
+}
+
+.ntf-auction-stats__last-price span {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+}
+
+.ntf-auction-stats__last-price {
+    text-align: right;
+}
+
+@media (max-width: 767px) {
+    .ntf-auction-stats__last-price {
+        text-align: left;
+        margin: 15px 0 0;
+        padding-bottom: 15px;
+    }
+}

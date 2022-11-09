@@ -1,0 +1,38 @@
+.non-polygon-block, .non-polygon-block.col {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 40px 25px;
+
+  p {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.32;
+    letter-spacing: 0.01rem;
+  }
+
+  .btn.add-network-button {
+    margin: 40px auto 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    --loader-size: 32px;
+  }
+
+  .add-network-button img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .network-name {
+    white-space: nowrap;
+    margin: 0 6px;
+    display: inline-block;
+  }
+
+  .network-name img {
+    height: 1.3em;
+    margin-right: 6px;
+  }
+}

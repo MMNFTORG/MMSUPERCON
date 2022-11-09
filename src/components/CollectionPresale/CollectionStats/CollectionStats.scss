@@ -1,0 +1,135 @@
+.collection-stats {
+  &__progress {
+    margin-bottom: 20px;
+    position: relative;
+
+    .progress {
+      background: rgba(255, 21, 15, 0.1);
+      overflow: unset;
+      height: 8px;
+      border-radius: 0;
+      backdrop-filter: blur(20px);
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      background: var(--color-background-red);
+    }
+  }
+
+  &__switcher {
+    position: absolute;
+    right: 0;
+    top: -35px;
+
+    button {
+      background-color: transparent;
+      padding: 0;
+      margin-left: 5px;
+      border: none;
+      color: var(--color-text-black);
+      transition: all 300ms ease-in;
+      font-size: 16px;
+      font-weight: 700;
+      position: relative;
+
+      &:after {
+        width: 0;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        transition: all 300ms ease-in;
+        content: '';
+        background-color: var(--color-text-red);
+      }
+
+      &:nth-child(1):after {
+        right: 0;
+        left: auto;
+      }
+
+      &.active:after {
+        width: 100%;
+      }
+
+      &:hover {
+        color: var(--color-text-red);
+      }
+    }
+  }
+
+  &__status {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 126%;
+    color: var(--color-text-black);
+  }
+
+  &__last-price span {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+  }
+
+  &__last-price {
+    text-align: right;
+  }
+
+  .loader {
+    margin: 1rem auto -0px;
+  }
+
+  .phase-title {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    color: rgba(5, 0, 0, 0.6);
+  }
+
+  .form-tabs {
+    border-bottom: 1px solid #D8D8D8;
+    padding-bottom: 20px;
+
+    .nav-link {
+      margin-right: 30px;
+      padding: 10px 0;
+      font-family: var(--font-eurostile);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #C2C2C7;
+      letter-spacing: 1px;
+      background-color: transparent;
+      border: none;
+      text-transform: uppercase;
+
+      &:hover {
+        border: none;
+      }
+
+      &.active {
+        background-color: transparent;
+        font-weight: 400;
+        color: var(--color-text-red);
+        border: none;
+
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .project-stats__last-price {
+    text-align: left;
+    margin: 15px 0 0;
+    padding-bottom: 15px;
+  }
+}

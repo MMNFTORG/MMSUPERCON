@@ -1,0 +1,84 @@
+.top-banner {
+  padding: 130px 0 0px;
+  background-image: url('../../../assets/Landing/banner-bg.jpg');
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+
+  @media (max-width: 991px) {
+    background-image: url('../../../assets/Landing/banner-mobile-bg.png');
+    padding-top: 20px;
+  }
+
+
+  @media (max-width: 991px) {
+    &:after {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 80%;
+      content: '';
+      background: linear-gradient(196.41deg, #050000 43.48%, rgba(5, 0, 0, 0) 87.11%);
+      z-index: 0;
+    }
+
+    .container {
+      z-index: 1;
+      position: relative;
+    }
+  }
+
+  &__title {
+    font-family: var(--font-eurostile);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 113%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+
+    @media (max-width: 767px) {
+      font-size: 32px;
+      line-height: 126%;
+    }
+
+    span {
+      background-color: var(--color-background-red);
+      padding: 8px 5px 0;
+    }
+  }
+
+  &__left {
+    position: relative;
+    padding-bottom: 160px;
+    @media (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__description {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    @media (max-width: 767px) {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 130%;
+    }
+  }
+
+  &__sign {
+    position: absolute;
+    transform: rotate(-10.07deg);
+    bottom: 10px;
+    left: 190px;
+  }
+}

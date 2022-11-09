@@ -1,0 +1,92 @@
+.market-sorting {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: uppercase;
+  position: relative;
+  color: #050000;
+
+  &__button {
+    background-color: transparent;
+    border: none;
+    padding: 0 25px 0 0;
+    font-family: 'Oswald';
+    position: relative;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #6B6B6B;
+    margin-left: 10px;
+    
+    &:after {
+      position: absolute;
+      content: '';
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url('../../../assets/select-arrow.svg');
+      width: 12px;
+      height: 8px;
+    }
+  }
+
+  &__options-list {
+    opacity: 0;
+    transition: all 300ms ease-in;
+    position: absolute;
+    left: 0;
+    width: 250px;
+    z-index: 2;
+    top: 100%;
+    padding: 0 16px;
+    background: #FFFFFF;
+    border: 1px solid #D8D8D8;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.08);
+
+    ul {
+      padding-left: 0;
+      margin: 0;
+      list-style: none;
+
+      li {
+        border-bottom: 1px solid #D8D8D8;
+        padding: 15px 0;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+
+        button, a {
+          background-color: transparent;
+          border: none;
+          transition: all 300ms;
+          text-align: left;
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 150%;
+          letter-spacing: 0.5px;
+          color: #050000;
+          text-transform: uppercase;
+
+          &:hover {
+            color: var(--color-text-red);
+          }
+        }
+      }
+    }
+
+    &--opened {
+      opacity: 1;
+    }
+  }
+}

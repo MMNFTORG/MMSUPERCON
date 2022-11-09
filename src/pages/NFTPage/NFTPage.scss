@@ -1,0 +1,231 @@
+.nft-token-page {
+    position: relative;
+    padding-top: 30px;
+}
+
+.nft-token-page:before {
+    position: fixed;
+    content: '';
+    width: 50%;
+    height: calc(100% + 81px);
+    top: -81px;
+    left: 0;
+    z-index: -1;
+}
+
+.nft-token-section {
+    margin-top: 44px;
+}
+
+.nft-token-section .loader:first-of-type {
+    margin: auto;
+}
+
+.nft-token-asset-box {
+    display: flex;
+    width: 100%;position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+@media (max-width: 767px) {
+    .nft-token-asset-box {
+        padding: 24px;
+    }
+}
+
+.nft-token-asset-box:before {
+     content: '';
+     position: absolute;
+     background: #282828;
+     left: 0;
+     right: 0;
+     z-index: 1;
+     top: 0;
+     width: 100%;
+     height: 50%;
+ }
+
+.nft-token-asset-box:after {
+     content: '';
+     position: absolute;
+     background: linear-gradient(180deg, #F0F0F0 51.8%, rgba(240, 240, 240, 0) 100%);
+     left: 0;
+     right: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+ }
+
+.nft-token-asset {
+    width: 100%;
+    min-height: 400px;
+    border-radius: 0;
+    position: relative;
+    z-index: 3;
+}
+
+.nft-token__heading {
+    display: flex;
+    flex-direction: column;
+}
+
+.nft-token__description {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    color: #2E2B2C;
+}
+
+.nft-token__social-share {
+    border-top: 1px solid rgba(142, 143, 150, 0.5);
+    padding-top: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.nft-token__description-list ~ p {
+    margin-top: 28px;
+    margin-bottom: 0;
+}
+
+.nft-token-page .tile {
+    border-radius: 32px;
+}
+
+.nft-token-page .tile + .tile {
+    margin-top: 18px;
+}
+
+.nft-token__collection {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.nft-token__collection-logo {
+    width: 60px;
+    height: 60px;
+
+
+    @media (max-width: 767px) {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.nft-token__collection .nft-token__collection-logo img {
+    max-width: 100%;
+
+    @media (max-width: 767px) {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.nft-token__collection-name {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.nft-token__heading-text {
+    font-family: var(--font-eurostile);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    align-items: center;
+    color: #050000;
+}
+
+.nft-token__amount-stat {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 1.5px;
+    color: #444444;
+}
+
+
+.nft-token__collection-name a {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--color-text-black);
+
+
+    @media (max-width: 767px) {
+        font-size: 12px;
+        line-height: 150%;
+    }
+}
+
+.nft-token__badges {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nft-token__badge {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 5px 8px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 126%;
+    display: flex;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 767px) {
+    .nft-token-page .nft-token-asset-box {
+        margin: -25px 0 -50px;
+    }
+
+    .nft-token-page .nft-token__heading {
+        margin-top: 32px;
+    }
+}
+
+.nft-token__tags {
+    margin: 30px 0;
+}
+
+.tag-list {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.tag-list__item {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 126%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 0 8px;
+    height: 32px;
+    background: #252525;
+    backdrop-filter: blur(20px);
+
+    @media (max-width: 767px) {
+        font-size: 12px;
+        line-height: 126%;
+    }
+}

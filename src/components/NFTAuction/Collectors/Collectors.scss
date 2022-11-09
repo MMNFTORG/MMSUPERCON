@@ -1,0 +1,124 @@
+.collectors {
+    .collectors-tabs {
+        border-bottom: 0;
+
+        .nav-link {
+            border: none;
+            color: #C2C2C7;
+
+            font-family: var(--font-eurostile);
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 126%;
+            text-transform: uppercase;
+
+
+            @media (max-width: 767px) {
+                font-size: 19px;
+                padding: 0.5rem 0.3rem;
+            }
+        }
+
+        .nav-link.active:after {
+            display: none;
+        }
+
+        .nav-item.show .nav-link, .nav-link.active {
+            font-weight: 700;
+            font-size: 40px;
+            border: none;
+            color: var(--color-text-red);
+
+            @media (max-width: 767px) {
+                font-size: 22px;
+            }
+        }
+
+        .nav-link:focus, .nav-link:hover {
+            border: none;
+        }
+    }
+}
+.collectors-table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.collectors-table__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px;
+    background: #FFFFFF;
+    border: 1px solid #D8D8D8;
+    margin-bottom: 8px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    color: #050000;
+}
+
+.collectors-table__head .collectors-table__row {
+    padding: 15px 30px;
+    border: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+
+    color: #6B6B6B;
+    background-color: transparent;
+}
+
+.collectors-table__column {
+    flex-grow: 1;
+    width: 33.33%;
+}
+
+.collector-item__wallet {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+}
+
+.collector-item__price {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    letter-spacing: 0.5px;
+    color: #050000;
+}
+
+.collector-item__price span {
+    color: #2E2B2C;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+@media (max-width: 767px) {
+    .collectors-table__row {
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px;
+    }
+
+    .collector-item__mobile-desc {
+        color: var(--color-text-white-transparantize);
+    }
+
+    .collectors-table__column {
+        width: 100%;
+    }
+}

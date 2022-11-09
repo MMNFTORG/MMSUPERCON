@@ -1,0 +1,109 @@
+.cristi-section {
+  background-image: url('../../../assets/about-us/cristi-bg.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  padding: 90px 0 0;
+
+  @media (max-width: 767px) {
+    padding-top: 20px;
+  }
+
+
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @media (max-width: 1200px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
+
+    @media (max-width: 1100px) {
+      max-width: none;
+    }
+
+    @media (max-width: 767px) {
+      margin-top: 30px;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  &__info {
+    width: 100%;
+    max-width: 50%;
+    padding: 90px 0;
+
+    @media (max-width: 1100px) {
+      max-width: none;
+      padding: 20px 0;
+    }
+
+    .section-title {
+      text-align: left;
+
+      @media (max-width: 767px) {
+        font-size: 24px;
+        line-height: 126%;
+      }
+
+      &:before {
+        left: 0;
+        transform: none;
+      }
+
+      .section-title__red-bg {
+        color: #FFFFFF;
+      }
+    }
+
+    p {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: #050000;
+    }
+  }
+
+  &__inst {
+    margin-top: 25px;
+
+    a {
+      display: inline-flex;
+      justify-content: center;
+      gap: 10px;
+      align-items: center;
+      text-decoration: none;
+      border: 1px solid rgba(5, 0, 0, 1);
+      padding: 0 45px;
+      height: 72px;
+      color: #000000;
+      font-family: 'Oswald';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 36px;
+      text-align: center;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+
+      @media (max-width: 767px) {
+        width: 320px;
+        display: flex;
+        margin: 10px auto;
+      }
+    }
+  }
+}

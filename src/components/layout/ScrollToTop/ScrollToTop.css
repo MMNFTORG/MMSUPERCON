@@ -1,0 +1,38 @@
+.scroll-to-top {
+    position: fixed;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    bottom: 40px;
+    right: 40px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(40px);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: 0.15s linear;
+    transform: translateY(35px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.scroll-to-top.shown {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.scroll-to-top svg {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    transition: all 0.2s;
+}
+
+.scroll-to-top:hover svg {
+    margin-top: -20px;
+}

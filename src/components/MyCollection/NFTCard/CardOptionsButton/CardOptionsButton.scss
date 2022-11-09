@@ -1,0 +1,100 @@
+.card-options-button {
+  position: relative;
+
+  &__button {
+    background-color: transparent;
+    border: none;
+    transition: all 300ms;
+    padding: 2px 5px;
+
+    &:hover {
+      background-color: var(--color-text-red-hover);
+    }
+  }
+
+  &__options-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 195px;
+    z-index: 5;
+    padding: 0 16px;
+    background: #FFFFFF;
+    border: 1px solid #D8D8D8;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.08);
+
+    ul {
+      padding-left: 0;
+      margin: 0;
+      list-style: none;
+
+      li {
+        border-bottom: 1px solid #D8D8D8;
+        padding: 15px 0;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+
+        button, a {
+          background-color: transparent;
+          border: none;
+          transition: all 300ms;
+          text-align: left;
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 150%;
+          letter-spacing: 0.5px;
+          color: #050000;
+          text-transform: uppercase;
+
+          &:hover {
+            color: var(--color-text-red);
+          }
+        }
+      }
+    }
+  }
+}
+
+.share-modal {
+  padding: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &__close {
+    position: absolute;
+    right: 22px;
+    top: 22px;
+    background-color: transparent;
+    border: none;
+    
+    svg path {
+      fill: #000;
+      transition: all 300ms;
+    }
+
+    &:hover svg path {
+      fill: var(--color-text-red)
+    }
+  }
+
+  .share-with__title {
+    font-family: 'Eurostile LT Std';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #050000;
+    margin-bottom: 24px;
+  }
+}

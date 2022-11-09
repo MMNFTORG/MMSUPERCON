@@ -1,0 +1,28 @@
+.balance-item {
+    display: flex;
+    align-items: center;
+}
+
+.balance-item__icon {
+    width: 90px;
+    height: 90px;
+    margin-right: 24px;
+}
+
+.balance-item__title {
+    margin-bottom: 8px;
+}
+
+.balance-item .tooltip-wrapper {
+    margin-left: 8px;
+}
+
+@media (max-width: 1199px) {
+    .balance-item__title.tile__description {
+        font-size: 16px;
+    }
+
+    .balance-item__main.tile__main {
+        font-size: 32px;
+    }
+}

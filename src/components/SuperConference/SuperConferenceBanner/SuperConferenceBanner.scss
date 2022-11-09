@@ -1,0 +1,110 @@
+.supper-conference-banner {
+  padding: 40px 0 115px;
+  background-image: url('../../../assets/Landing/recent-sales-bg.jpg');
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+  height: 645px;
+
+  @media (max-width: 991px) {
+    height: auto;
+    text-align: center;
+  }
+
+  &__video {
+    position: relative;
+    z-index: 2;
+
+
+    @media (max-width: 991px) {
+      width: 327px;
+      height: 327px;
+      margin: 20px auto -190px;
+      position: relative;
+      z-index: 1;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .section-title {
+    text-align: left;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 126%;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 2;
+
+    .section-title__red-bg {
+      line-height: 116%;
+    }
+
+    @media (max-width: 767px) {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 126%;
+      text-align: center;
+    }
+
+    &:before {
+      display: none;
+    }
+
+    i {
+      display: block;
+    }
+  }
+  
+  &__snake-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    padding: 20px 0;
+    background-color: #F8F8F8;
+
+    @media (max-width: 767px) {
+      bottom: -30px;
+    }
+
+    ul {
+      display: flex;
+      list-style: none;
+      margin-left: 0;
+      gap: 24px;
+      font-family: var(--font-eurostile);
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: transparent;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #3b3b3b;
+    }
+  }
+
+  .super-conference-left {
+    &__button {
+      .round-button.transparent {
+        background-color: transparent;
+        border: 1px solid var(--color-background-red);
+        width: 182px;
+
+        @media (max-width: 991px) {
+          margin: 0 auto;
+        }
+
+        &:hover {
+          background-color: var(--color-text-red-hover);
+        }
+      }
+    }
+  }
+}

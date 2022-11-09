@@ -1,0 +1,112 @@
+.my-collection-page {
+    padding: 0 0 90px;
+}
+
+.nfts-page__top-banner {
+    height: calc(100vh - 260px);
+    min-height: 670px;
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+.nfts-page__top-banner .container {
+    height: 100%;
+}
+
+.nfts-page__top-banner p, .nfts-page__top-banner h2.title {
+    color: var(--color-text-white)
+}
+
+.nfts-page__top-banner .title {
+    font-family: var(--font-eurostile);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 126%;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.nfts-page__top-banner .title:before {
+    position: absolute;
+    content: '';
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85px;
+    height: 40px;
+    bottom: 100%;
+    background-image: url('../../assets/red-crown.svg');
+    background-size: cover;
+}
+
+.nfts-page__top-banner .subtitle {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 1.5px;
+    color: #FFFFFF;
+}
+
+.nfts-page__top-banner .background {
+    z-index: -1;
+    background-color: var(--color-background-black);
+}
+
+.nfts-page .hero-row, .market-page .hero-row {
+    align-content: center;
+    padding-bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+}
+
+.nfts-page .hero-row .hero-row__main, .market-page .hero-row .hero-row__main {
+    margin: 0 auto min(11vw, 12vh);
+    max-width: 700px;
+}
+
+.hero-row__main p {
+    position: relative;
+    z-index: 1;
+}
+
+.nfts-page .hero-row__main:before, .market-page .hero-row__main:before {
+    position: absolute;
+    content: '';
+    width: 120%;
+    height: 140%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(60px);
+    z-index: -1;
+    background: linear-gradient(360deg, rgba(6, 1, 1, 0.7) 0%, rgba(6, 1, 1, 0.8) 102.06%);
+}
+
+.collection-banner__artist-avatar {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    content: '';
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.collection-banner__artist-avatar img {
+    width: 100%;
+}

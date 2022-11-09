@@ -1,0 +1,57 @@
+:root {
+  --color-text-white: #FFFFFF;
+  --color-text-black: rgba(5, 0, 0, 1);
+  --color-text-white-transparantize: rgba(255, 255, 255, 0.5);
+  --color-background: #fff;
+  --color-background-black: #050000;
+  --color-background-grey: #F8F8F8;
+  --color-background-yellow: rgba(171, 136, 0, 1);
+  --color-background-red: #FF150F;
+  --color-text-red: #FF150F;
+  --color-text-red-hover: #e50d08;
+  --color-text-yellow: rgba(171, 136, 0, 1);
+  --color-text-success: #02C88D;
+  --color-text-violet: #C58BFF;
+  --color-text-grey: #8E8F96;;
+  --color-main-gradient-text: linear-gradient(108.68deg, #C4A2FF 4.9%, #FF9393 74.14%);
+
+  --color-separator: #414347;
+  --color-separator-transparentize: rgba(65, 67, 71, 0.5);
+  --container-max-width: 100%;
+
+  --font-eurostile: 'Eurostile LT Std', sans-serif;
+}
+
+@media (min-width: 576px) {
+  :root {
+    --container-max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --container-max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  :root {
+    --container-max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --container-max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  :root {
+    --container-max-width: 1320px;
+  }
+}
+
+:root {
+  --container-sticky-max-width: calc(var(--container-max-width) + ((100vw - var(--container-max-width)) / 2) - 12px)
+}

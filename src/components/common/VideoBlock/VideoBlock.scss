@@ -1,0 +1,45 @@
+.video-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 460px;
+  
+  @media (max-width: 767px) {
+    min-height: 200px;
+    iframe {
+      width: 393px !important;
+      height: 194px !important;
+
+      max-width: 100%;
+    }
+  }
+
+  &__poster {
+    position: relative;
+
+    @media (max-width: 767px) {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  &__play-btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    background-color: transparent;
+
+    @media (max-width: 767px) {
+      width: 56px;
+      height: 56px;
+
+      svg {
+        max-width: 100%;
+        height: auto !important;
+      }
+    }
+  }
+}

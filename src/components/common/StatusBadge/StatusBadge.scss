@@ -1,0 +1,42 @@
+.status-badge {
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 3px 5px;
+    font-size: 16px;
+    line-height: 126%;
+    letter-spacing: 0.5px;
+    color: var(--color-text-white);
+    display: inline-block;
+    
+    &--coming-soon {
+        background: linear-gradient(91.53deg, #FF833D 1.3%, #FF9E67 98.7%);
+    }
+
+    &--registration-open {
+        background: linear-gradient(91.53deg, #0B96B5 1.3%, #02C88D 98.7%);
+    }
+
+    &--auction-opened {
+        background: linear-gradient(91.53deg, #0B96B5 1.3%, #02C88D 98.7%);
+    }
+
+    &--registration-closed {
+        background: linear-gradient(91.53deg, #0B96B5 1.3%, #48505C 98.7%);
+    }
+
+    &--auction-closed {
+        background: linear-gradient(91.53deg, #0B96B5 1.3%, #48505C 98.7%);
+    }
+
+    &--private-live {
+        background: linear-gradient(42.26deg, #EF8BFF 33.95%, #9946fe 138.93%);
+    }
+
+    &--live {
+        background: linear-gradient(90deg, #FE4646 0%, #FF7272 100%);
+    }
+
+    &--closed {
+        background: linear-gradient(90deg, #444B56 0%, #5F6978 100%);
+    }
+}

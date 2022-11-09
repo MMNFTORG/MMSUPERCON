@@ -1,0 +1,44 @@
+.bottom-banner {
+  background-image: url('../../../assets/bottom-banner.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 80px 0;
+  text-align: center;
+
+  &__title {
+    font-family: var(--font-eurostile);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    max-width: 834px;
+    margin: 0 auto 30px;
+    
+    @media (max-width: 767px) {
+      font-size: 32px;
+      line-height: 38px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__buttons {
+
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      list-style: none;
+      padding-left: 0;
+
+      @media (max-width: 767px) {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.partners-video-section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 60px;
+  background-image: url('../../../assets/about-us/video-block-bg.jpg');
+  margin-bottom: 100px;
+
+  &__video {
+    margin-top: -100px;
+    transform: translateY(140px);
+  }
+
+  @media (max-width: 767px) {
+    padding-bottom: 50px;
+  }
+}

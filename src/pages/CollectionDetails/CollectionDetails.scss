@@ -1,0 +1,167 @@
+.collection-page {
+    padding: 0;
+
+    & > .loader {
+        margin: 0 auto;
+    }
+
+    .whitelist-block {
+        margin-top: 40px;
+    }
+
+    .whitelist-block p {
+        max-width: 370px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 1px;
+    }
+
+    .whitelist-block a:not(.round-button) {
+        color: inherit;
+    }
+
+    .whitelist-block a:not(.round-button):hover {
+        color: var(--color-text-white);
+    }
+
+    .whitelist-badge {
+        display: inline-flex;
+        padding: 24px;
+        align-items: center;
+        border: 1px solid var(--color-text-black);
+        border-radius: 26px;
+        margin-bottom: 32px;
+    }
+
+    .whitelist-badge.invalid,
+    .whitelist-badge.rejected,
+    .whitelist-badge.not_submitted {
+        border: none;
+        background-color: rgba(254, 70, 70, 0.1);
+    }
+
+    .whitelist-badge.in_review {
+        border-color: rgba(255, 212, 70, 0.32);
+        background: rgba(255, 212, 70, 0.1);
+    }
+
+    .whitelist-badge .loader {
+        --loader-size: 32px;
+    }
+
+    .whitelist-badge img {
+        margin-right: 16px;
+    }
+}
+
+.collection__head {
+    gap: 12px;
+}
+
+.collection__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--color-background-black);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+
+.collection {
+    &__head-content {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+
+    &__name {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 126%;
+        margin-bottom: 0;
+
+        @media (max-width: 767px) {
+            font-size: 12px;
+            line-height: 150%;
+            letter-spacing: 0.5px;
+        }
+    }
+
+    &__collection {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 126%;
+    }
+
+    &__body {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #050000;
+        margin-top: 40px;
+    }
+
+    &__image {
+        max-width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+
+        @media (max-width: 767px) {
+            padding: 24px;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            background: #282828;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            top: 0;
+            width: 100%;
+            height: 50%;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            background: linear-gradient(180deg, #F0F0F0 51.8%, rgba(240, 240, 240, 0) 100%);
+            left: 0;
+            right: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        img {
+            position: relative;
+            z-index: 3;
+            max-width: 100%;
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+    .collection__collection {
+        font-size: 16px;
+    }
+}
+

@@ -1,0 +1,31 @@
+.recent-sale-slider {
+    min-width: 646px;
+
+    @media (max-width: 767px) {
+        min-width: auto;
+    }
+}
+
+.recent-sale-slider__pagination {
+    display: flex;
+    justify-content: center;
+    width: calc(100vw - (var(--bs-gutter-x,.75rem) * 2));
+    margin: 30px 0;
+}
+
+.recent-sale-slider__pagination .swiper-pagination-bullet {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    opacity: 1;
+    margin: 0 4px;
+    transition: .15s linear;
+}
+
+.recent-sale-slider__pagination .swiper-pagination-bullet-active {
+    width: 40px;
+    background: var(--color-text-white);
+}
+
+.recent-sales-slider {
+    overflow: inherit;
+}

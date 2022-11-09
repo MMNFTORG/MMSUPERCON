@@ -1,0 +1,49 @@
+.share-with {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+
+    a {
+      backdrop-filter: blur(40px);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      background: #FFFFFF;
+      border: 1px solid #E4E4E4;
+
+      border-radius: 50%;
+
+      svg {
+        width: 27px;
+        height: 27px;
+      }
+
+      svg path {
+        fill: var(--color-background-black);
+        transition: all 300ms ease-in;
+      }
+
+      &:hover svg path {
+        fill: var(--color-background-red)
+      }
+    }
+  }
+
+  &__title {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #6B6B6B;
+    margin-bottom: 16px;
+  }
+}

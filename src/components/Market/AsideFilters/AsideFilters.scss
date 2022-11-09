@@ -1,0 +1,39 @@
+.filter-modal {
+  .modal-dialog {
+    max-width: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    margin-top: 0;
+    height: 100%;
+  }
+  .modal-content {
+    border: none
+  }
+
+  &__logo {
+    width: 64px;
+    height: 64px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgb(0 0 0 / 15%);
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__close {
+    button {
+      background-color: transparent;
+      border: none;
+      padding: 15px;
+    }
+  }
+}

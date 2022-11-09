@@ -1,0 +1,85 @@
+.mission-vision {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+
+  @media (max-width: 991px) {
+    flex-wrap: wrap;
+    .mission-vision__item {
+      max-width: 100%;
+      padding: 80px 30px 50px;
+    }
+  }
+
+  &__item {
+    display: inline-flex;
+    flex-grow: 1;
+    max-width: 50%;
+    padding: 135px 15px;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center center;
+
+    &:hover {
+      background-image: url('../../../assets/Landing/mission-vision-hover-bg.png');
+
+      .mission-vision__title {
+        color: var(--color-text-red);
+
+        &:before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__wrapper {
+    max-width: 458px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-family: var(--font-eurostile);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    display: flex;
+    align-items: flex-end;
+    text-transform: uppercase;
+    color: var(--color-text-black);
+    position: relative;
+    transition: color 300ms ease-in;
+    margin-bottom: 20px;
+
+    @media (max-width: 767px) {
+      font-size: 32px;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 68px;
+      height: 32px;
+      left: 0;
+      transition: opacity 300ms ease-in;
+      bottom: calc(100% + 15px);
+      background-image: url('../../../assets/red-crown.svg');
+      background-size: cover;
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+      opacity: 0;
+    }
+  }
+
+  &__info {
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    color: #050000;
+
+  }
+}

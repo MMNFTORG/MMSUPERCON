@@ -1,0 +1,40 @@
+.nft-banner-slider {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    border-radius: 0;
+}
+
+.nft-banner-slider .swiper-wrapper {
+    align-items: center;
+}
+
+.nft-banner-slide {
+    /*width: 454px;*/
+    max-width: 400px;
+    height: 520px;
+    margin: 0 26px;
+}
+
+.nft-banner-slide__asset {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0px;
+}
+
+.nft-banner-slide:nth-child(even) {
+    transform: translateY(50px);
+}
+
+.nft-banner-slide:nth-child(odd) {
+    transform: translateY(-50px);
+}
+
+@media (max-width: 767px) {
+    .nft-banner-slide {
+        max-width: 270px;
+        height: 280px;
+    }
+}

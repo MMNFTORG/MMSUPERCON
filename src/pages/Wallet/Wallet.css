@@ -1,0 +1,20 @@
+.wallet-page {
+    text-align: left;
+}
+
+.wallet-page .top-row {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: left !important;
+}
+
+.wallet-page .top-row .title {
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 112%;
+    color: #fff;
+    text-align: left;
+    padding-bottom: 30px;
+}

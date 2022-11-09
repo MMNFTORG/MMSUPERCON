@@ -1,0 +1,112 @@
+.about-us-top-banner {
+  text-align: center;
+  background: url("../../../assets/about-us/about-us-bg.png") #000;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 676px;
+  padding-top: 20px;
+  margin-bottom: 400px;
+
+  @media (max-width: 1070px) {
+    height: 800px;
+    margin-bottom: 300px;
+  }
+
+  &__description {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 812px;
+    margin: 20px auto;
+
+    @media (max-width: 1070px) {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 150%;
+    }
+  }
+
+  &__images {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+
+    @media (max-width: 1070px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  .about-us-person-image {
+    position: relative;
+
+    @media (max-width: 1070px) {
+      max-width: 270px;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    &__desc {
+      position: absolute;
+      left: 32px;
+      bottom: 26px;
+      font-family: 'Oswald';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 150%;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+
+    &__sign {
+      position: absolute;
+
+      @media (max-width: 1070px) {
+        img {
+          width: 60%;
+        }
+      }
+    }
+
+    &:nth-child(1) {
+      .about-us-person-image__sign {
+        bottom: -66px;
+        right: -15px;
+      }
+
+      @media (max-width: 1070px) {
+        margin-right: 60px;
+
+        .about-us-person-image__sign {
+          bottom: -32px;
+          right: -48px;
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      .about-us-person-image__sign {
+        top: 58px;
+        left: -23px;
+      }
+
+      @media (max-width: 1070px) {
+        margin-left: 60px;
+
+        .about-us-person-image__sign {
+          top: 20px;
+          left: -48px;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

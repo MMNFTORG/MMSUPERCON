@@ -1,0 +1,24 @@
+@media (max-width: 767px) {
+    .bid-form-wrapper {
+        border-top: 1px solid var(--color-separator);
+    }
+}
+
+.bid-form-wrapper {
+    .price__description {
+        margin-bottom: 12px;
+    }
+}
+
+.bid-form {
+    &__buttons {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    &__buttons .round-button {
+        flex-grow: 1;
+        max-width: calc(50% - 10px);
+    }
+}

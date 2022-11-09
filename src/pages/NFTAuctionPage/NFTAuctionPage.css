@@ -1,0 +1,83 @@
+.nft-auction-page {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+.nft-auction-page:before {
+    position: fixed;
+    content: '';
+    width: 50%;
+    height: calc(100% + 81px);
+    top: -81px;
+    left: 0;
+    z-index: -1;
+}
+
+.nft-auction-page .nft-token-section {
+    margin-top: 44px;
+}
+
+.nft-token-section .loader:first-of-type {
+    margin: auto;
+}
+
+.nft-token-asset-box {
+    display: flex;
+    width: 100%;
+}
+
+.nft-token-asset {
+    width: 100%;
+    min-height: 400px;
+}
+
+.nft-token__heading {
+    display: flex;
+    flex-direction: column;
+}
+
+.nft-token__description {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.nft-token__description-list ~ p {
+    margin-top: 28px;
+    margin-bottom: 0;
+}
+
+.nft-auction-page .tile {
+    border-radius: 0px;
+}
+
+.nft-auction-page .tile + .tile {
+    margin-top: 18px;
+}
+
+.nft-auction-page .nft-token__collection {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.nft-auction-page .nft-token__collection-name {
+    margin-left: 15px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    color: var(--color-text-white);
+}
+
+@media (max-width: 767px) {
+    .nft-token-asset img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+.nft-token__collection img {
+    width: 60px;
+    height: 60px;
+}

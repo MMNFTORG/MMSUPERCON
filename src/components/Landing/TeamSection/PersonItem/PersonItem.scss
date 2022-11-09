@@ -1,0 +1,70 @@
+.person-card {
+  max-width: 210px;
+  margin: 0 0 15px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  @media (max-width: 767px) {
+    max-width: 155px;
+  }
+
+  &__avatar {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+
+    @media (max-width: 767px) {
+      width: 155px;
+      height: 155px;
+      margin-bottom: 10px;
+    }
+
+    img {
+      max-width: 100%;
+      filter: grayscale(1);
+    }
+  }
+
+  &__name {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 36px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    text-transform: uppercase;
+    color: #050000;
+    margin-bottom: 10px;
+
+    @media (max-width: 767px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__bio {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #050000;
+  }
+
+  &__social-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 40px;
+
+    svg path {
+      fill: var(--color-text-black)
+    }
+  }
+}

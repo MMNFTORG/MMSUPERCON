@@ -1,0 +1,41 @@
+.no-nfts-tile.tile--with-shadow {
+  height: 400px;
+  padding: 46px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  margin: 15px 0;
+  text-align: center;
+  background: #F8F8F8;
+  border-radius: 0;
+
+  .tile__description{
+    color: var(--color-text-black);
+  }
+
+  .dots {
+    margin-bottom: 26px;
+  }
+
+  .dots > div {
+    display: inline-block;
+    margin: 0 6px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 40px rgba(254, 150, 70, 0.4);
+  }
+
+  .dots > div:nth-child(1) {
+    background: linear-gradient(116.94deg, #FF7D61 14.14%, #FE9E46 87.43%);
+  }
+
+  .dots > div:nth-child(2) {
+    background: linear-gradient(116.94deg, #FEB446 14.14%, #FE9E46 87.43%);
+  }
+
+  .dots > div:nth-child(3) {
+    background: linear-gradient(171.87deg, #FF6D6D -21.09%, #FEB446 115.63%);
+  }
+}

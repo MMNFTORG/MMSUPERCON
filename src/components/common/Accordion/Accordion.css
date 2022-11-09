@@ -1,0 +1,65 @@
+.card.accordion span {
+    display: block;
+}
+
+.card.accordion {
+    font-size: 18px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(142, 143, 150, 0.5);
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.card.accordion .collapse {
+    padding-top: 0;
+    line-height: 150%;
+}
+
+.card.accordion .card-body {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+
+    color: #2E2B2C;
+}
+
+.card.accordion .card-header {
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+.card.accordion .btn {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    width: 100% !important;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    align-items: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #2E2B2C;
+    padding: 32px 36px;
+}
+
+.card.accordion .btn span {
+    transition: 0.3s linear;
+}
+
+.card.accordion .btn.active {
+    color: var(--color-text-yellow);
+}
+
+.card.accordion svg path {
+    fill: var(--color-background-black);
+}
+
+.card.accordion .card-body {
+    padding: 0 8rem 2.25rem 2.25rem;
+}

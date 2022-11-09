@@ -1,0 +1,41 @@
+.wrong-network-modal .modal-dialog {
+    max-width: 610px;
+}
+
+.wrong-network-modal .modal-content {
+    padding: 40px 54px;
+}
+
+.wrong-network-modal .modal-title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.26;
+    margin-bottom: 24px;
+}
+
+.wrong-network-modal p {
+    line-height: 1.5;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.wrong-network-modal__buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.wrong-network-modal__buttons .round-button.large {
+    font-size: 20px;
+}
+
+@supports (gap: 16px) {
+    .wrong-network-modal__buttons {
+        gap: 16px;
+    }
+}
+
+@supports not (gap: 16px) {
+    .wrong-network-modal__buttons > * + * {
+        margin-left: 16px;
+    }
+}

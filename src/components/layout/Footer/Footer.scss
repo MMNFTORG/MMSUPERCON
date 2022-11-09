@@ -1,0 +1,172 @@
+.footer {
+  padding: 80px 0 25px;
+  background-color: var(--color-background-black);
+  color: var(--color-text-white);
+
+  &__copyright {
+    text-align: center;
+    font-size: 16px;
+    line-height: 32px;
+    text-transform: uppercase;
+    margin-top: 25px;
+  }
+  
+  &__subscribe {
+    @media (max-width: 991px) {
+      max-width: 330px;
+      text-align: center;
+      margin: 20px auto;
+    }
+  }
+
+  &__social {
+    @media (max-width: 991px) {
+      max-width: 390px;
+      margin: 20px auto;
+      text-align: center;
+    }
+  }
+
+  &__logo {
+    @media (max-width: 513px) {
+      max-width: 132px;
+      height: 120px;
+      margin: 0 auto;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  
+  @media (max-width: 575px) {
+    text-align: center;
+  }
+
+  &-title {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 47px;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+  }
+
+  &__partnership {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    @media (max-width: 767px) {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+  }
+}
+
+.footer-menu {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0 40px;
+  margin-top: 50px !important;
+  gap: 50px;
+
+  @media (max-width: 991px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 112%;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: relative;
+
+
+    @media (max-width: 991px) {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 112%;
+      letter-spacing: -0.2px;
+    }
+
+    &:after {
+      content: '';
+      left: calc(100% + 16px);
+      width: 25px;
+      height: 12px;
+      background-image: url('../../../assets/red-crown.svg');
+      position: absolute;
+      top: 2px;
+      display: flex;
+      @media (max-width: 991px) {
+       display: none;
+      }
+    }
+
+    &:last-child:after {
+      display: none;
+    }
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        color: var(--color-text-red)
+      }
+    }
+  }
+}
+
+.contact-form {
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+
+    @media (max-width: 991px) {
+      flex-direction: column;
+
+      .round-button {
+        width: 100%;
+      }
+    }
+  }
+
+  &__input {
+    background: #030303;
+    opacity: 0.8;
+    border: 1px solid #545454;
+    backdrop-filter: blur(20px);
+    height: 56px;
+    width: 250px;
+    border-radius: 0;
+    outline: none;
+    color: var(--bs-white);
+    padding-left: 10px;
+
+    @media (max-width: 1400px) {
+      width: 198px;
+    }
+    @media (max-width: 991px) {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.recent-sales {
+  padding: 100px 0 115px;
+  background-color: #F8F8F8;
+
+  &__title {
+    font-family: var(--font-eurostile);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    color: var(--color-text-black);
+    text-align: center;
+  }
+}

@@ -1,0 +1,30 @@
+.team-section {
+  padding: 50px 0;
+
+  .team-wrapper {
+    gap: 62px;
+    flex-wrap: wrap;
+
+    @media (max-width: 767px) {
+      gap: 10px
+    }
+  }
+
+  .round-button, .btn.round-button {
+    padding: 14px 24px;
+    background-color: transparent;
+    width: 311px;
+    height: 56px;
+    margin: 0 auto;
+    border: 1px solid #050000;
+    filter: drop-shadow(0px 4px 10px rgba(255, 21, 15, 0.25));
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #050000;
+  }
+}

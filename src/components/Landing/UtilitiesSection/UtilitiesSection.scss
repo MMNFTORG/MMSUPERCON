@@ -1,0 +1,86 @@
+.utilities-section {
+  padding: 130px 0;
+
+
+  @media (max-width: 767px) {
+    padding: 60px 0;
+  }
+}
+
+.utility-card {
+  width: 392px;
+  height: 392px;
+  position: relative;
+  border: 4px solid #FF150F;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 32px;
+
+  &:after {
+    position: absolute;
+    width: 51px;
+    height: 24px;
+    right: 16px;
+    top: 16px;
+    content: '';
+    background-image: url('../../../assets/red-crown.svg');
+    background-size: cover;
+  }
+
+  &__image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+
+    img {
+      max-width: 100%;
+    }
+
+    &:after {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, #000000 100%);
+    }
+  }
+
+  &__body {
+    position: relative;
+    z-index: 1;
+    color: var(--color-text-white);
+    padding: 32px;
+  }
+
+  &__title {
+    font-family: var(--font-eurostile);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: flex-end;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+
+    @media (max-width: 1200px) {
+      font-size: 12px;
+      line-height: 120%;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.whitelist-page {
+    padding: 0px 0 80px;
+
+    &__banner {
+        background-image: url('../../assets/whitelist-bg.jpg');
+        width: 100%;
+        min-height: 460px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: -30px;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+    }
+
+    &__logo {
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+        padding: 15px;
+        background-color: #fff;
+        width: 145px;
+        height: 135px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}

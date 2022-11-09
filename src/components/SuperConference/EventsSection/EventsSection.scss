@@ -1,0 +1,109 @@
+.events-section {
+  padding: 90px 0;
+  background-image: url('../../../assets/super-conference/event-schedule-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--color-background-black);
+  background-position: 10% top;
+  @media (max-width: 767px) {
+    background-position: 70% top;
+    background-size: 350%;
+  }
+
+
+  &__title {
+    font-family: var(--font-eurostile);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: var(--color-text-white);
+    margin-bottom: 30px;
+  }
+
+  &__timeline {
+    max-width: 50%;
+    margin-right: auto;
+    list-style: none;
+    padding-left: 0;
+
+
+    @media (max-width: 991px) {
+      max-width: none;
+    }
+  }
+
+  .event-item {
+    display: flex;
+    gap:  82px;
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(219, 225, 235, 0.2);
+    @media (max-width: 767px) {
+      gap: 40px
+    }
+
+
+    &__day {
+      font-family: var(--font-eurostile);
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 126%;
+      letter-spacing: 1px;
+      min-width: 80px;
+      text-transform: uppercase;
+      color: transparent;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: var(--color-text-white);
+
+      @media (max-width: 767px) {
+        font-size: 24px;
+        line-height: 126%;
+        -webkit-text-stroke-width: 1px;
+      }
+    }
+
+    &__title {
+      font-family: 'Oswald';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 150%;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--color-text-white);
+
+      @media (max-width: 767px) {
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 1.5px;
+      }
+    }
+
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__buttons-wrapper {
+    display: flex;
+    gap: 25px;
+    margin-top: 50px;
+
+    @media (max-width: 767px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    > * {
+      width: 286px;
+      height: 72px;
+    }
+
+    .round-button.bordered {
+      border-color: var(--color-text-white)
+    }
+  }
+}

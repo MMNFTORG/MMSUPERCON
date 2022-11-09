@@ -1,0 +1,52 @@
+.market-page {
+  padding: 0 0 80px;
+
+  .load-more {
+    padding: 14px 20px;
+    width: 328px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(40px);
+    border-radius: 50px;
+    color: var(--color-text-white);
+  }
+
+  &__wrapper {
+    padding-top: 120px;
+  }
+
+  &__aside-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+  }
+
+  .filter-menu-button {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border: 1px solid #D8D8D8;
+    border-radius: 50%;
+  }
+}
+
+.market-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 25px;
+
+  &__results-count {
+    font-family: var(--font-eurostile);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: var(--color-text-black);
+  }
+}

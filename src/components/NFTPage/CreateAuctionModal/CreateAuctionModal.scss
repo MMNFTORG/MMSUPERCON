@@ -1,0 +1,42 @@
+.create-auction-modal {
+  .close-button {
+    appearance: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    outline: none;
+    border: none;
+    background: none;
+  }
+
+  .close-button:hover svg path {
+    fill: var(--color-text-red);
+  }
+
+  .timezone-picker {
+    display: block;
+    width: 100%;
+  }
+
+  .timezone-picker-list {
+    border: 1px solid var(--color-text-white-transparantize);
+  }
+
+  .timezone-picker-list-item {
+    color: var(--color-text-white);
+
+    &-active, &:hover {
+      background-color: var(--color-text-white-transparantize);
+    }
+  }
+
+  .timezone-picker-textfield input {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid var(--color-text-white-transparantize);
+    backdrop-filter: blur(20px);
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: none;
+    color: var(--color-text-white);
+  }
+}

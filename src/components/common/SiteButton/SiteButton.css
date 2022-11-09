@@ -1,0 +1,165 @@
+.round-button {
+    position: relative;
+}
+
+.round-button, .btn.round-button {
+    font-style: normal !important;
+    font-size: 16px;
+    line-height: 36px;
+    background-color: var(--color-text-white);
+    color: #181A1B;
+    border: 0;
+    border-color: var(--color-text-white);
+    border-radius: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Oswald';
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    justify-content: center;
+    gap: 8px;
+}
+
+.round-button svg {
+    height: 20px;
+}
+
+.round-button .link-arrow {
+    height: 1.2em;
+    width: 1.2em;
+}
+
+.round-button .link-arrow path {
+    fill: #181A1B;
+    transition: .15s;
+}
+
+.round-button a, .btn.round-button a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.round-button a:hover, .btn.round-button a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.round-button.red {
+    background: var(--color-background-red);
+    color: var(--color-text-white);
+    box-shadow: 0px 4px 10px rgba(255, 21, 15, 0.25);
+    border: 0;
+}
+
+.round-button.red .link-arrow path,
+.round-button.transparent .link-arrow path {
+    fill: var(--color-text-white);
+}
+
+.round-button.transparent {
+    color: var(--color-text-white);
+    background: rgba(0, 0, 0, 0.25);
+    border-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(40px);
+}
+
+.round-button.grey {
+    background: #F0F0F0;
+}
+
+.round-button:not(:disabled):hover, .btn.round-button:not(:disabled):hover {
+    background-color: var(--color-text-red-hover);
+    color: var(--bs-white)
+}
+
+.round-button:not(:disabled):hover svg path {
+    fill: var(--color-text-white);
+}
+
+.round-button.large {
+    border-radius: 0px;
+    line-height: 46px;
+    padding-left: 30px;
+    font-size: 24px;
+    padding-right: 30px;
+}
+
+.round-button.small {
+    line-height: 34px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.round-button.wide {
+    padding-left: 66px;
+    padding-right: 66px;
+}
+
+.round-button.bordered {
+    border: 1px solid var(--color-background-black);
+}
+
+.round-button.full-width {
+    width: 100%;
+    max-width: 100%;
+}
+
+@media (max-width: 1399px) {
+    .round-button, .btn.round-button {
+        font-size: 14px;
+        line-height: 32px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .round-button.large {
+        line-height: 42px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .round-button.wide {
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+
+    .round-button.small {
+        line-height: 28px;
+    }
+}
+
+.btn.round-button:disabled {
+    pointer-events: auto;
+    cursor: not-allowed;
+}
+
+.round-button.round-button--with-badge:disabled {
+    opacity: 1;
+}
+
+.round-button__badge {
+    position: absolute;
+    top: -20px;
+    left: 8px;
+    font-size: 12px;
+    line-height: 1.26;
+    color: var(--color-background);
+    padding: 6px 12px;
+    background-color: var(--color-text-white);
+    border: 2px solid var(--color-background);
+    border-radius: 20px;
+    text-transform: none;
+    transform: rotate(-3.93deg);
+}
+
+.navbar .round-button.active:after {
+    display: none;
+}
+
+.navbar .round-button.active {
+    color: var(--color-text-red);
+}

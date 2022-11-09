@@ -1,0 +1,40 @@
+.approval-steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+    @supports (gap: 8px) {
+        gap: 8px;
+    }
+
+    @supports not (gap: 8px) {
+        & > * + * {
+            margin-left: 8px;
+        }
+    }
+
+    &__label {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.4;
+        letter-spacing: 1px;
+        color: var(--color-text-black);
+        opacity: 0.5;
+    }
+
+    &__label.active {
+        opacity: 1;
+    }
+
+    &__line {
+        width: 200px;
+        height: 4px;
+        border-radius: 3px;
+        background: linear-gradient(108.68deg, rgba(255, 21, 15, .1) 4.9%, rgba(255, 21, 15, .4) 54.14%, rgba(255, 21, 15, 1) 100%);
+    }
+
+    &__line.filled {
+        background: linear-gradient(108.68deg, rgba(255, 21, 15, .7) 54.14%, rgba(255, 21, 15, 1) 100%);
+    }
+}
